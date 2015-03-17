@@ -13,13 +13,16 @@
 months:
   0:
   - name: Jueves Santo
-    regions: [es_pv, es_ct, es_na, es_v, es_vc, es_an]
+    regions: [es]
     function: easter(year)-3
   - name: Viernes Santo
     regions: [es]
     function: easter(year)-2
   - name: Lunes de Pascua
-    regions: [es_pv, es_ct, es_na, es_v, es_vc]
+    regions: [es]
+    function: easter(year)+1
+  - name: Semana Santa
+    regions: [es]
     function: easter(year)+1
   1:
   - name: Año Nuevo
@@ -41,7 +44,7 @@ months:
     mday: 1
     observed: to_monday_if_sunday
   - name: San José
-    regions: [es_v, es_vc, es_cm, es_mu, es_m]
+    regions: [es]
     mday: 19
     observed: to_monday_if_sunday
   4:
